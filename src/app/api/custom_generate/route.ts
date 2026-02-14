@@ -1,3 +1,7 @@
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
+
 import { NextResponse, NextRequest } from "next/server";
 import { cookies } from 'next/headers';
 import { DEFAULT_MODEL, sunoApi } from "@/lib/SunoApi";
