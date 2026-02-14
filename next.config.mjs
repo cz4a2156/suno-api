@@ -1,19 +1,12 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.(ttf|html)$/i,
-      type: "asset/resource",
-    });
-    return config;
-  },
+  webpack: (config) => { ... },
 
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
+
+  output: "standalone",
 
   experimental: {
     serverMinification: false,
   },
 };
-
-export default nextConfig;
